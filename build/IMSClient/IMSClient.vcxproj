@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Base\base64.cpp" />
+    <ClCompile Include="..\..\src\Base\blowfish.cpp" />
+    <ClCompile Include="..\..\src\Base\CIniConfig.cpp" />
+    <ClCompile Include="..\..\src\Base\CEDString.cpp" />
+    <ClCompile Include="..\..\src\Base\get_mac_address.cpp" />
+    <ClCompile Include="..\..\src\IMSClient\CAppClient.cpp" />
+    <ClCompile Include="..\..\src\IMSClient\CCinData.cpp" />
+    <ClCompile Include="..\..\src\IMSClient\EntryPage.cpp" />
+    <ClCompile Include="..\..\src\IMSClient\IMSClient.cpp" />
+    <ClCompile Include="..\..\src\IMSClient\main.cpp" />
+    <ClCompile Include="..\..\src\IMSClient\Messagebox.cpp" />
+    <ClCompile Include="..\..\src\IMSClient\MyReceive.cpp" />
+    <ClCompile Include="..\..\src\IMSClient\MySocket.cpp" />
+    <ClCompile Include="..\..\src\IMSClient\SetUserName.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\src\IMSClient\IMSClient.h">
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="..\..\src\IMSClient\IMSClient.qrc">
+      <FileType>Document</FileType>
+      <QtRccDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)rcc\%(RelativeDir)</QtRccDir>
+      <QtRccDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)rcc\%(RelativeDir)</QtRccDir>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="..\..\src\IMSClient\EntryPage.ui" />
+    <QtUic Include="..\..\src\IMSClient\IMSClient.ui">
+      <QtUicDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)uic\%(RelativeDir)</QtUicDir>
+      <QtUicDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)uic\%(RelativeDir)</QtUicDir>
+    </QtUic>
+    <QtUic Include="..\..\src\IMSClient\Messagebox.ui">
+      <QtUicDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)uic\%(RelativeDir)</QtUicDir>
+      <QtUicDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)uic\%(RelativeDir)</QtUicDir>
+    </QtUic>
+    <QtUic Include="..\..\src\IMSClient\SetUserName.ui">
+      <SubType>Designer</SubType>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Base\base64.h" />
+    <ClInclude Include="..\..\src\Base\blowfish.h" />
+    <ClInclude Include="..\..\src\Base\CEDString.h" />
+    <ClInclude Include="..\..\src\Base\get_mac_address.h" />
+    <ClInclude Include="..\..\include\PublicDefine.h" />
+    <ClInclude Include="..\..\src\Base\CIniConfig.h" />
+    <QtMoc Include="..\..\src\IMSClient\CAppClient.h">
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+    </QtMoc>
+    <QtMoc Include="..\..\src\IMSClient\CCinData.h">
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+    </QtMoc>
+    <QtMoc Include="..\..\src\IMSClient\MySocket.h">
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+    </QtMoc>
+    <QtMoc Include="..\..\src\IMSClient\MyReceive.h">
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+    </QtMoc>
+    <QtMoc Include="..\..\src\IMSClient\Messagebox.h">
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+    </QtMoc>
+    <QtMoc Include="..\..\src\IMSClient\SetUserName.h">
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+    </QtMoc>
+    <QtMoc Include="..\..\src\IMSClient\EntryPage.h">
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+      <QtMocDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)moc\%(RelativeDir)</QtMocDir>
+    </QtMoc>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6AD77EA-DC91-427C-AEE1-FB8E626FDD18}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\bind\</OutDir>
+    <IntDir>$(SolutionDir)..\_vsTemp\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\bind64\</OutDir>
+    <IntDir>$(SolutionDir)..\_vsTemp\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\_vsTemp\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\bin64\</OutDir>
+    <IntDir>$(SolutionDir)..\_vsTemp\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\include;$(SolutionDir)..\src;$(SolutionDir)..\src\Base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <QtMoc>
+      <QtMocDir>$(IntDir)\moc\%(RelativeDir)</QtMocDir>
+      <ExecutionDescription>moc %(Identity)</ExecutionDescription>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+      <DynamicSource>output</DynamicSource>
+      <ParallelProcess>true</ParallelProcess>
+    </QtMoc>
+    <QtRcc>
+      <QtRccDir>$(IntDir)\rcc\%(RelativeDir)</QtRccDir>
+      <ExecutionDescription>rcc %(Identity)</ExecutionDescription>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+      <TwoPass>false</TwoPass>
+      <DynamicSource>output</DynamicSource>
+      <ParallelProcess>true</ParallelProcess>
+    </QtRcc>
+    <QtUic>
+      <QtUicDir>$(IntDir)\uic\%(RelativeDir)</QtUicDir>
+      <ExecutionDescription>uic %(Identity)</ExecutionDescription>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+      <ParallelProcess>true</ParallelProcess>
+    </QtUic>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\libd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jsoncpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\include;$(SolutionDir)..\src;$(SolutionDir)..\src\Base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <QtMoc>
+      <QtMocDir>$(IntDir)\moc\%(RelativeDir)</QtMocDir>
+      <ExecutionDescription>moc %(Identity)</ExecutionDescription>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+      <DynamicSource>output</DynamicSource>
+      <ParallelProcess>true</ParallelProcess>
+    </QtMoc>
+    <QtRcc>
+      <QtRccDir>$(IntDir)\rcc\%(RelativeDir)</QtRccDir>
+      <ExecutionDescription>rcc %(Identity)</ExecutionDescription>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+      <TwoPass>false</TwoPass>
+      <DynamicSource>output</DynamicSource>
+      <ParallelProcess>true</ParallelProcess>
+    </QtRcc>
+    <QtUic>
+      <QtUicDir>$(IntDir)\uic\%(RelativeDir)</QtUicDir>
+      <ExecutionDescription>uic %(Identity)</ExecutionDescription>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+      <ParallelProcess>true</ParallelProcess>
+    </QtUic>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\libd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jsoncpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jsoncpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\include;$(SolutionDir)..\src;$(SolutionDir)..\src\Base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jsoncpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\include;$(SolutionDir)..\src;$(SolutionDir)..\src\Base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
+    <QtInstall>Qt5.9.9_32</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="QtSettings">
+    <QtInstall>Qt5.9.9_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>Qt5.9.9_32</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="QtSettings">
+    <QtInstall>Qt5.9.9_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

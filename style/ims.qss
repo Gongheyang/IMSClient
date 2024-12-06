@@ -1,0 +1,97 @@
+/*ÉèÖÃÈ«¾Ö×ÖÌåºÍÑÕÉ«*/ 
+*{font: 12pt "Î¢ÈíÑÅºÚ";color:#000000;}
+
+QWidget {
+	border-image: url(../style/image/mod_bg.png);
+}
+
+QMainWindow {
+	border-image: url(../style/image/background.png);
+}
+
+
+QFrame{
+	background:transparent;
+}
+
+QTabWidget{
+	background:transparent;
+}
+
+QWidget#tabWidget_LoginPage
+{
+	border-image: url(../style/image/background.png);
+}
+
+QWidget#tab_Login
+{
+ border-image:url(../style/image/login_bkg.png); 
+}
+
+QWidget#tab_Register
+{ 
+	border-image:url(../style/image/register.png);
+}
+
+QLabel#label_pwd
+{ 
+	background-color: rgb(255,255, 255); 
+	border: 1px solid black; 
+	padding: 5px;
+}
+QLabel#label_account
+{
+	background-color: rgb(255,255, 255);
+	border: 1px solid black;
+	padding: 5px;
+}
+QLabel#label_registerName
+{
+	background-color: rgb(255,255, 255);
+	border: 1px solid black;
+	padding: 5px;
+}
+QLabel#label_registerPwd
+{
+	background-color: rgb(255,255, 255);
+	border: 1px solid black;
+	padding: 5px;
+}
+QLabel#label_verifyPwd
+{
+	background-color: rgb(255,255, 255);
+	border: 1px solid black;
+	padding: 5px;
+}
+
+
+/* QPushButton */ 
+QPushButton
+{
+	font-size: 16pt "Î¢ÈíÑÅºÚ";
+	color: white;
+	border-color: rgb(0,190,255);
+	border-width: 1px;
+	border-image: url(../style/image/button_normal.png);
+	outline: none;
+}
+QPushButton:hover
+{
+	color: white;
+	border-image: url(../style/image/button_hover.png);
+}
+QPushButton:pressed,
+QPushButton:checked
+{
+	color: white;
+	border-image: url(../style/image/button_press.png);
+}
+
+
+QLineEdit#lineEdit_sendData
+{
+	font-size: 18pt "Î¢ÈíÑÅºÚ";
+	border:1px;
+	border-color: rgb(202,234,206);
+}
+
