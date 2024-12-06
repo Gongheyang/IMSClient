@@ -1,5 +1,5 @@
 # IMSProject
-windows系统，即时通讯软件（包含客户端，服务端）
+windows系统，即时通讯软件（ 客户端 ）
 
 
 ## 项目概况
@@ -18,8 +18,8 @@ windows系统，即时通讯软件（包含客户端，服务端）
   - doc：文档
   - src：源代码
     - Base 公共基础模块
-	- APPServer 服务端
-	- APPClient 客户端
+	- IMSClient 客户端
+      ...
   - config APP配置
   - include 公共头文件
 
@@ -30,8 +30,6 @@ windows系统，即时通讯软件（包含客户端，服务端）
 
 
 使用说明：
-
-服务端配置： 需要配置./config/config.ini 文件中的 net项 下的port 
 
 客户端配置： 需要根据服务端配置./config/config.ini 文件中的 net项 下的ip和port 
 
